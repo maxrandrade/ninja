@@ -46,5 +46,5 @@ assert(window.inner === undefined, 'inner() still not in global scope')
 window.wieldsSword = function swingsSword() { return true }
 assert(window.wieldsSword.name === 'swingsSword', "wieldSword's real name is swingsSword")
 
-var ownTest = function () { return true }
-assert(window.ownTest.name === '', "ownTest's real name is namedFunction")
+var ownTest = function namedFunction() { return true }
+assert(window.ownTest.name === 'namedFunction', "ownTest's real name is namedFunction")
