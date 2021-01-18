@@ -1,6 +1,5 @@
 var ninja = {
   chirp: function signal(n) {
-    // ninja.chirp would ruin samurai.chirp, but 'this' keyword fixes it
     return n > 1 ? signal(n - 1) + '-chirp' : 'chirp'
   }
 }
