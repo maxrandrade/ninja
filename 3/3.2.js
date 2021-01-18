@@ -1,10 +1,3 @@
-function assert(value, desc) {
-  var li = document.createElement('li')
-  li.className = value ? 'pass' : 'fail'
-  li.appendChild(document.createTextNode(desc))
-  document.getElementById('results').appendChild(li)
-}
-
 assert(true, '|----- BEFORE OUTER -----|')
 assert(typeof outer === 'function', 'outer() is in scope')
 assert(typeof inner === 'function', 'inner() is in scope')

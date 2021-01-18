@@ -1,3 +1,4 @@
+// Grouping tests
 (function() {
   var results
   this.assert = function assert(value, desc) {

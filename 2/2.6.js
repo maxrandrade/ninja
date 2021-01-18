@@ -1,3 +1,4 @@
+// Testing async
 (function () {
   var queue = []
   var paused = false

@@ -1,10 +1,3 @@
-function assert(value, desc) {
-  var li = document.createElement('li')
-  li.className = value ? 'pass' : 'fail'
-  li.appendChild(document.createTextNode(desc))
-  document.getElementById('results').appendChild(li)
-}
-
 var ninja = {
   chirp: function(n) {
     // ninja.chirp would ruin samurai.chirp, but 'this' keyword fixes it

@@ -1,10 +1,3 @@
-function assert(value, desc) {
-  var li = document.createElement('li')
-  li.className = value ? 'pass' : 'fail'
-  li.appendChild(document.createTextNode(desc))
-  document.getElementById('results').appendChild(li)
-}
-
 function juggle() {
   var result = 0
   for (var n = 0; n < arguments.length; n++) {
