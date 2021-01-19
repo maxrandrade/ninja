@@ -15,3 +15,8 @@ function isPrime(value) {
 
 assert(isPrime(5), '5 is prime!')
 assert(isPrime.answers[5], 'The answer was cached!')
+
+function getElements(name) {
+  if (!getElements.cache) getElements.cache = {}
+  return getElements.cache[name] = getElements.cache[name] || document.getElementsByTagName(name)
+}
