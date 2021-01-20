@@ -1,3 +1,6 @@
+// Math by default accepts a variable list of ARGUMENTS and then will return min or max value
+// In order to accept an array, we can use apply
+
 function smallest(array) {
   return Math.min.apply(Math, array)
 }

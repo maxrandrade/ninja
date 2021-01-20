@@ -4,7 +4,7 @@ var store = {
   add: function(fn) {
     if(!fn.id) {
       fn.id = store.nextId++
-      return !!(store.cache[fn.id] = fn) //returning true so it can be used on assert
+      return !!(store.cache[fn.id] = fn) //returning its boolean form so it can be used on assert
     }
   }
 }
