@@ -9,7 +9,6 @@ assert(makeSamurai.length == 2, 'Two arguments expected')
 
 function addMethod(object, name, fn) {
   var old = object[name]
-  console.log(old)
   object[name] = function(){
     if (fn.length == arguments.length)
       return fn.apply(this, arguments)
