@@ -4,7 +4,9 @@ var elems = {
     Array.prototype.push.call(this, elem)
   },
   gather: function(id) {
-    this.add(document.getElementById(id))
+    var elem = document.getElementById(id)
+    if (!elem) return
+    this.add(elem)
   }
 }
 

@@ -6,7 +6,7 @@ var ninja = {
 }
 
 var samurai = {
-  chirp: ninja.chirp
+  chirp: ninja.chirp // the first call is executed, but at the moment of recursion, ninja.chirp is undefined so the keyword 'this' is required
 }
 
 ninja = {}
